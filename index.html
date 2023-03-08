@@ -6,7 +6,7 @@
     <title>Tailwind Docs Sandbox</title>
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
-  <body class="container mx-auto mt-4 space-y-20">
+  <body class="container mx-auto mt-4 space-y-20 bg-slate-50">
     <div class="flex w-full flex-col items-center gap-4">
       <p class="font-sans text-xl font-bold text-gray-800">Hover, Focus, and active</p>
       <button
@@ -14,6 +14,39 @@
       >
         Save Changes
       </button>
+    </div>
+    <div class="flex w-full flex-col items-center gap-4">
+      <p class="font-sans text-xl font-bold text-gray-800">First and last</p>
+      <ul role="list" class="w-96 divide-y divide-slate-200 rounded-md bg-white p-6 shadow-sm">
+        <li class="flex py-4 first:pt-0 last:pb-0">
+          <img class="h-10 w-10 rounded-full" src="./assets/avatars/avatar_01.png" alt="" />
+          <div class="ml-3 overflow-hidden">
+            <p class="text-sm font-medium text-slate-900">Person Name</p>
+            <p class="truncate text-sm text-slate-500">personemail@example.com</p>
+          </div>
+        </li>
+        <li class="flex py-4 first:pt-0 last:pb-0">
+          <img class="h-10 w-10 rounded-full" src="./assets/avatars/avatar_02.png" alt="" />
+          <div class="ml-3 overflow-hidden">
+            <p class="text-sm font-medium text-slate-900">Person Name</p>
+            <p class="truncate text-sm text-slate-500">personemail@example.com</p>
+          </div>
+        </li>
+        <li class="flex py-4 first:pt-0 last:pb-0">
+          <img class="h-10 w-10 rounded-full" src="./assets/avatars/avatar_03.png" alt="" />
+          <div class="ml-3 overflow-hidden">
+            <p class="text-sm font-medium text-slate-900">Person Name</p>
+            <p class="truncate text-sm text-slate-500">personemail@example.com</p>
+          </div>
+        </li>
+        <li class="flex py-4 first:pt-0 last:pb-0">
+          <img class="h-10 w-10 rounded-full" src="./assets/avatars/avatar_04.png" alt="" />
+          <div class="ml-3 overflow-hidden">
+            <p class="text-sm font-medium text-slate-900">Person Name</p>
+            <p class="truncate text-sm text-slate-500">personemail@example.com</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
