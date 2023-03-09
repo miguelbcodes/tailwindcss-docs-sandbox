@@ -240,5 +240,26 @@
         </label>
       </form>
     </div>
+    <div class="flex w-full flex-col items-center gap-4">
+      <p class="font-sans text-xl font-bold text-gray-800">Differentiating peers</p>
+      <form class="w-96 rounded-sm bg-white p-5">
+        <div class="mb-6 w-full border-b border-slate-200 pb-2 font-semibold text-slate-800">Published status</div>
+
+        <input id="draft" class="peer/draft" type="radio" name="status" checked />
+        <label for="draft" class="text-sm font-medium text-slate-800 peer-checked/draft:text-sky-500">Draft</label>
+
+        <input id="published" class="peer/published" type="radio" name="status" />
+        <label for="published" class="text-sm font-medium text-slate-800 peer-checked/published:text-sky-500">
+          Published
+        </label>
+
+        <div class="mt-4 hidden text-sm text-slate-600 peer-checked/draft:block">
+          Drafts are only visible to administrators.
+        </div>
+        <div class="mt-4 hidden text-sm text-slate-600 peer-checked/published:block">
+          Your post will be publicly visible on your site.
+        </div>
+      </form>
+    </div>
   </body>
 </html>
