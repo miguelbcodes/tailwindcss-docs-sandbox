@@ -226,5 +226,19 @@
         </li>
       </ul>
     </div>
+    <div class="flex w-full flex-col items-center gap-4">
+      <p class="font-sans text-xl font-bold text-gray-800">Stylign based on sibling state</p>
+      <form class="w-96 bg-white p-5">
+        <label class="block">
+          <span class="block text-sm font-medium text-slate-700">Email</span>
+          <input
+            type="email"
+            placeholder="you@example.com"
+            class="peer mt-2 w-full rounded-md border border-slate-200 py-2 px-3 shadow-sm invalid:border-pink-500 invalid:text-pink-500 invalid:ring-pink-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:invalid:border-pink-600 focus:invalid:text-pink-500 focus:invalid:ring-pink-500"
+          />
+          <p class="invisible mt-2 text-sm text-pink-600 peer-invalid:visible">Please provide a valid email address.</p>
+        </label>
+      </form>
+    </div>
   </body>
 </html>
